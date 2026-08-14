@@ -126,7 +126,7 @@ A: 每个配置项使用独立的数据目录（`user_data_dir`），即可同�
 
 **Q: Firefox 如何使用？**
 
-A: `browser_path` 填写 Firefox 的可执行路径，其余参数按字段说明填写即可。隐身模式会自动使用 `-private` 参数。
+A: 不支持。
 
 **Q: 配置文件可以手动编辑吗？**
 
@@ -134,7 +134,7 @@ A: 可以。`browser_configs.json` 是标准 JSON 格式，可用任意文本编
 
 **Q: 支持打包为 exe 吗？**
 
-A: 支持。项目已包含 `browser_manager.spec` 文件，可使用 PyInstaller 打包：
+A: 支持。编辑 `browser_manager.spec` 文件，可使用 PyInstaller 打包：
 
 ```bash
 pyinstaller browser_manager.spec
